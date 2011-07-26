@@ -63,7 +63,6 @@ class AutoPHPUnit
 		$command = 'phpunit -c ' . $this->pathToTest . '/phpunit.xml ' . $this->pathToTest;
 		error_log($command);
 		echo `$command`;
-		error_log('Done');
 	}
 
 	/**
