@@ -36,7 +36,7 @@ class AutoPHPUnit
 	 * @return void
 	 */
 	public function run() {
-		$this->clearConsole();
+		$this->runUnitTests();
 		$this->watchFiles();
 	}
 
