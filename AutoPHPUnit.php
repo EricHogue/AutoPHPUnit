@@ -60,6 +60,7 @@ class AutoPHPUnit
 	public function runUnitTests() {
 		$this->clearConsole();
 
+		//--testdox
 		$command = 'phpunit -c ' . $this->pathToTest . '/phpunit.xml ' . $this->pathToTest;
 		error_log($command);
 		echo `$command`;
