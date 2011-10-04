@@ -71,7 +71,7 @@ class RecursiveFolderWatcher
 		$watchDescriptor = inotify_add_watch($this->inotify, $folderPath, IN_ALL_EVENTS);
 		$this->watchDescriptors[$watchDescriptor] = $folderPath;
 
-		$this->addWatchToSubFolders($folderPath);
+		if (is_dir($folderPath)) $this->addWatchToSubFolders($folderPath);
 	}
 
 	/**
