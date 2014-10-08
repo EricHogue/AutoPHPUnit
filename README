@@ -1,4 +1,4 @@
-This works, but I know use watchr. It has more flexibility.
+This works, but I know use Guard. It has more flexibility.
 
 Watch the current folder recursively and run the tests with PHPUnit every time a file is changed.
 
